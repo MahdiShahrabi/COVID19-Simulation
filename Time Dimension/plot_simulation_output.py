@@ -6,9 +6,9 @@ def plot_simulation_output(Graphsize,data,module=['Infected','Rt','Died']):
 
     lng = Graphsize
 
-    time = list(range(0,len(data)))
+    time = list(range(len(data['Level'])))
   
-    DATA ={'Normal':[x/lng for x in list(data.Normal)],'Infected':[x/lng for x in list(data.Infected)],'Died':[x/lng for x in list(data.Died)],'Rt':data.Rt}
+    DATA ={'Normal':[x/lng for x in list(data['Level'].Normal)],'Infected':[x/lng for x in list(data['Level'].Infected)],'Died':[x/lng for x in list(data['Level'].Died)],'Rt':data['R0_time_list']}
     colors ={'Normal':'green','Infected':'blue','Died':'red','Rt':'black'}
     Ls ={'Normal':'solid','Infected':'solid','Died':'dashed','Rt':'dashed'}
 
