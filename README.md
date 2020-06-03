@@ -1,2 +1,2 @@
 # COVID19-Simulation
-Studying different timing policies.
+An empirical approach to find R0 in a network.
