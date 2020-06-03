@@ -33,6 +33,8 @@ def plot_simulation_output(Graphsize,data,module=['Infected','Rt','Died']):
     ax1.set_ylabel('Percentage', fontsize=5)
     ax1.tick_params(axis='y', rotation=0,labelsize=5 )
     tick = int(len(time)/10)
+    if tick==0:
+        tick=1
     ax1.set_xticks(time[::tick])
     ax1.set_xticklabels(time[::tick])
     ax1.grid(alpha=.4,axis='x')
